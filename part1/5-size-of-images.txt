@@ -1,0 +1,315 @@
+Script started on 2022-02-14 15:31:49+08:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="115" LINES="30"]
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker run -d -it --name size-of-images --rm devopsdockeruh /simple/[K-web-service:alpine
+6b8950a7bb0d7fdb079d77897be2b82e9a634b3b941b49f952302c53a0102580
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ dcoker [K[K[K[K[K[K[Kdocker ps
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
+6b8950a7bb0d   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   5 seconds ago   Up 4 seconds             size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec size-of-images sh
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ 
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec size-of-images shps[K[K[K[K[K[K[K[K[K[Kdocker it[K[K-t [K[Kit exec size-of-images sh
+unknown shorthand flag: 'i' in -it
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/mjmbalagtas/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env
+                           var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/mjmbalagtas/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/mjmbalagtas/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/mjmbalagtas/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.7.1)
+  compose*    Docker Compose (Docker Inc., v2.2.3)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.16.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker -it exec size-of-images sh[4P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps[K[K[Kstart size-of-images
+size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker start size-of-images-it exec size-of-images sh
+unknown shorthand flag: 'i' in -it
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/mjmbalagtas/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env
+                           var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/mjmbalagtas/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/mjmbalagtas/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/mjmbalagtas/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.7.1)
+  compose*    Docker Compose (Docker Inc., v2.2.3)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.16.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker -it exec size-of-images sh[Kdocker ps 
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED              STATUS              PORTS     NAMES
+6b8950a7bb0d   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   About a minute ago   Up About a minute             size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec[K[K[K[K[K-[K -it exec size-of-images sh
+unknown shorthand flag: 'i' in -it
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Options:
+      --config string      Location of client config files (default "/home/mjmbalagtas/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env
+                           var and default context set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket(s) to connect to
+  -l, --log-level string   Set the logging level ("debug"|"info"|"warn"|"error"|"fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/home/mjmbalagtas/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/home/mjmbalagtas/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/home/mjmbalagtas/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Management Commands:
+  builder     Manage builds
+  buildx*     Docker Buildx (Docker Inc., v0.7.1)
+  compose*    Docker Compose (Docker Inc., v2.2.3)
+  config      Manage Docker configs
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  node        Manage Swarm nodes
+  plugin      Manage plugins
+  scan*       Docker Scan (Docker Inc., v0.16.0)
+  secret      Manage Docker secrets
+  service     Manage services
+  stack       Manage Docker stacks
+  swarm       Manage Swarm
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  build       Build an image from a Dockerfile
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  exec        Run a command in a running container
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  images      List images
+  import      Import the contents from a tarball to create a filesystem image
+  info        Display system-wide information
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  login       Log in to a Docker registry
+  logout      Log out from a Docker registry
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  ps          List containers
+  pull        Pull an image or a repository from a registry
+  push        Push an image or a repository to a registry
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  run         Run a command in a new container
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  search      Search the Docker Hub for images
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  version     Show the Docker version information
+  wait        Block until one or more containers stop, then print their exit codes
+
+Run 'docker COMMAND --help' for more information on a command.
+
+[1mTo get more help with docker, check out our guides at https://docs.docker.com/go/guides/[0m
+
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker -it exec size-of-images shps [K-it exec size-of-images sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexec -it size-of-images sh
+/usr/src/app # [6n/usr/src/app # [Jtail -f text.log
+2022-02-14 07:35:06 +0000 UTC
+2022-02-14 07:35:08 +0000 UTC
+2022-02-14 07:35:10 +0000 UTC
+2022-02-14 07:35:12 +0000 UTC
+2022-02-14 07:35:14 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-02-14 07:35:16 +0000 UTC
+2022-02-14 07:35:18 +0000 UTC
+2022-02-14 07:35:20 +0000 UTC
+2022-02-14 07:35:22 +0000 UTC
+2022-02-14 07:35:24 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-02-14 07:35:26 +0000 UTC
+2022-02-14 07:35:28 +0000 UTC
+2022-02-14 07:35:30 +0000 UTC
+2022-02-14 07:35:32 +0000 UTC
+2022-02-14 07:35:34 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-02-14 07:35:36 +0000 UTC
+^C
+/usr/src/app # [6nexit
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+ubuntu                              latest    54c9d81cbb44   12 days ago     72.8MB
+fav_distro                          bionic    dcf4d4bef137   12 days ago     63.2MB
+ubuntu                              18.04     dcf4d4bef137   12 days ago     63.2MB
+ubuntu                              bionic    dcf4d4bef137   12 days ago     63.2MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ exit
+exit
+
+Script done on 2022-02-14 15:35:52+08:00 [COMMAND_EXIT_CODE="0"]
