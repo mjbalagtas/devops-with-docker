@@ -65,4 +65,38 @@ Secret message is: 'You can find the source code here: https://github.com/docker
 2022-02-14 07:43:22 +0000 UTC
 ^C
 /usr/src/app # [6nexit
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LA
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+ubuntu                              latest    54c9d81cbb44   12 days ago     72.8MB
+fav_distro                          bionic    dcf4d4bef137   12 days ago     63.2MB
+ubuntu                              18.04     dcf4d4bef137   12 days ago     63.2MB
+ubuntu                              bionic    dcf4d4bef137   12 days ago     63.2MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
+devopsdockeruh/pull_exercise        latest    d9854bc0e13a   2 years ago     75.3MB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ ei[Kxit
+exit
+Script done, file is 5-size-of-images.txt
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsc[Kdockeruh/pull_exercise
+NAME      DESCRIPTION   STARS     OFFICIAL   AUTOMATED
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsdockeruh/pull_exercise[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kh
+NAME                                         DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+devopsdockeruh/simple-web-service                                                            1                    
+devopsdockeruh/ports_exercise                                                                1                    
+devopsdockeruh/pull_exercise                 This is the description of the image. This i…   0                    
+devopsdockeruh/exec_bash_exercise            Time to get inside the container                0                    
+devopsdockeruh/coursepage                                                                    0                    
+devopsdockeruh/first_volume_exercise         Use volume to get the log file outside of th…   0                    
+devopsdockeruh/overwrite_cmd_exercise        Learn about FROM and how it works               0                    
+devopsdockeruh/scaling-exercise-compute                                                      0                    
+devopsdockeruh/heroku-example                Exercise to deploy something to heroku          0                    
+devopsdockeruh/scaling-exercise-calculator                                                   0                    
+maebius/devopsdockeruh-coursepage                                                            0                    
+jalaiho1/coursepage                          Modified image of devopsdockeruh/coursepage:…   0                    
+m1kkou/devops_with_docker_project            This repo uses image: devopsdockeruh/coursep…   0                    
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ [K]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ [K]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsdockeruh/pull_exercise[15Pscript 5-size-of-images.txt[15Pdocker ps -ascript 5-size-of-images.txtdocker search devopsdockeruh/pull_exercise[K[Kdocker run -it devopsdockeruh/pull)e[K[K_exercise
+[1G[0JGive me the password: [23Gbasics
+You found the correct password. Secret message is:
+"This is the secret message"
+
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmba
