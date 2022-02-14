@@ -1,38 +1,42 @@
-Script started on 2022-02-14 15:41:48+08:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="115" LINES="30"]
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker run -d --[Kit --name dce[K[Kevops[K[K[K[K[K[Ksize-of-images --ri[Km devopsdockeruh /simpole[K[K[Kle-web-seriv[K[Kc[Kvice:alpine
-44a8c5716232b7bb7553c8cbd07f1a3855b917ba326a96e2cbfcf01e2b609d38
+Script started on 2022-02-14 16:05:41+08:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
 ]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker ps
+CONTAINER ID   IMAGE                                      COMMAND                 CREATED          STATUS          PORTS     NAMES
+44a8c5716232   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   23 minutes ago   Up 23 minutes             size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker stop sie[Kze-of-images
+size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ dock[K[K[K[Kdocker ps -a
+CONTAINER ID   IMAGE                          COMMAND           CREATED          STATUS                      PORTS     NAMES
+ce6f97ad055a   devopsdockeruh/pull_exercise   "node index.js"   13 minutes ago   Exited (0) 13 minutes ago             sleepy_shtern
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker run -d --[Kut[K[Kit --name size-of-images --rm devopsdockeruh/simp le-web-service:alpine
+0d0640b958d8039814894ae9f57bdbdfa38789424958fc68b273a550185aa279
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker ps 
 CONTAINER ID   IMAGE                                      COMMAND                 CREATED         STATUS         PORTS     NAMES
-44a8c5716232   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   6 seconds ago   Up 4 seconds             size-of-images
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec -it size-of-images sh
-/usr/src/app # [6n/usr/src/app # [Jtail -f log.[Js.txt
-tail: can't open 'logs.txt': No such file or directory
-tail: no files
-/usr/src/app # [6n/usr/src/app # tail -f logs.txt[J[J[J[J[J[J[J[J[Jtext.log
-2022-02-14 07:42:44 +0000 UTC
-2022-02-14 07:42:46 +0000 UTC
-2022-02-14 07:42:48 +0000 UTC
-2022-02-14 07:42:50 +0000 UTC
+0d0640b958d8   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"   5 seconds ago   Up 4 seconds             size-of-images
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec -it sh
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker exec -it sh[C[K[Ksize-of-images sh
+/usr/src/app # [6n/usr/src/app # [Jtail -f log[J[J[J[J text.log
+2022-02-14 08:07:20 +0000 UTC
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:42:52 +0000 UTC
-2022-02-14 07:42:54 +0000 UTC
-2022-02-14 07:42:56 +0000 UTC
-2022-02-14 07:42:58 +0000 UTC
-2022-02-14 07:43:00 +0000 UTC
+2022-02-14 08:07:22 +0000 UTC
+2022-02-14 08:07:24 +0000 UTC
+2022-02-14 08:07:26 +0000 UTC
+2022-02-14 08:07:28 +0000 UTC
+2022-02-14 08:07:30 +0000 UTC
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:02 +0000 UTC
-2022-02-14 07:43:04 +0000 UTC
-2022-02-14 07:43:06 +0000 UTC
-2022-02-14 07:43:08 +0000 UTC
-2022-02-14 07:43:10 +0000 UTC
+2022-02-14 08:07:32 +0000 UTC
+2022-02-14 08:07:34 +0000 UTC
+2022-02-14 08:07:36 +0000 UTC
+2022-02-14 08:07:38 +0000 UTC
+2022-02-14 08:07:40 +0000 UTC
 Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:12 +0000 UTC
-2022-02-14 07:43:14 +0000 UTC
-2022-02-14 07:43:16 +0000 UTC
-2022-02-14 07:43:18 +0000 UTC
-2022-02-14 07:43:20 +0000 UTC
-Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:22 +0000 UTC
+2022-02-14 08:07:42 +0000 UTC
+2022-02-14 08:07:44 +0000 UTC
 ^C
 /usr/src/app # [6nexit
 ]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
@@ -44,59 +48,7 @@ ubuntu                              bionic    dcf4d4bef137   12 days ago     63.
 devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
 devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
 devopsdockeruh/pull_exercise        latest    d9854bc0e13a   2 years ago     75.3MB
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ ei[Kxit
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ exit
 exit
 
-Script done on 2022-02-14 15:43:40+08:00 [COMMAND_EXIT_CODE="0"]
-07:43:00 +0000 UTC
-Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:02 +0000 UTC
-2022-02-14 07:43:04 +0000 UTC
-2022-02-14 07:43:06 +0000 UTC
-2022-02-14 07:43:08 +0000 UTC
-2022-02-14 07:43:10 +0000 UTC
-Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:12 +0000 UTC
-2022-02-14 07:43:14 +0000 UTC
-2022-02-14 07:43:16 +0000 UTC
-2022-02-14 07:43:18 +0000 UTC
-2022-02-14 07:43:20 +0000 UTC
-Secret message is: 'You can find the source code here: https://github.com/docker-hy'
-2022-02-14 07:43:22 +0000 UTC
-^C
-/usr/src/app # [6nexit
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
-REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
-ubuntu                              latest    54c9d81cbb44   12 days ago     72.8MB
-fav_distro                          bionic    dcf4d4bef137   12 days ago     63.2MB
-ubuntu                              18.04     dcf4d4bef137   12 days ago     63.2MB
-ubuntu                              bionic    dcf4d4bef137   12 days ago     63.2MB
-devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
-devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
-devopsdockeruh/pull_exercise        latest    d9854bc0e13a   2 years ago     75.3MB
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ ei[Kxit
-exit
-Script done, file is 5-size-of-images.txt
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsc[Kdockeruh/pull_exercise
-NAME      DESCRIPTION   STARS     OFFICIAL   AUTOMATED
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsdockeruh/pull_exercise[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kh
-NAME                                         DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-devopsdockeruh/simple-web-service                                                            1                    
-devopsdockeruh/ports_exercise                                                                1                    
-devopsdockeruh/pull_exercise                 This is the description of the image. This i…   0                    
-devopsdockeruh/exec_bash_exercise            Time to get inside the container                0                    
-devopsdockeruh/coursepage                                                                    0                    
-devopsdockeruh/first_volume_exercise         Use volume to get the log file outside of th…   0                    
-devopsdockeruh/overwrite_cmd_exercise        Learn about FROM and how it works               0                    
-devopsdockeruh/scaling-exercise-compute                                                      0                    
-devopsdockeruh/heroku-example                Exercise to deploy something to heroku          0                    
-devopsdockeruh/scaling-exercise-calculator                                                   0                    
-maebius/devopsdockeruh-coursepage                                                            0                    
-jalaiho1/coursepage                          Modified image of devopsdockeruh/coursepage:…   0                    
-m1kkou/devops_with_docker_project            This repo uses image: devopsdockeruh/coursep…   0                    
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ [K]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ [K]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker search devopsdockeruh/pull_exercise[15Pscript 5-size-of-images.txt[15Pdocker ps -ascript 5-size-of-images.txtdocker search devopsdockeruh/pull_exercise[K[Kdocker run -it devopsdockeruh/pull)e[K[K_exercise
-[1G[0JGive me the password: [23Gbasics
-You found the correct password. Secret message is:
-"This is the secret message"
-
-]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmba
+Script done on 2022-02-14 16:07:56+08:00 [COMMAND_EXIT_CODE="0"]
