@@ -1,0 +1,136 @@
+Script started on 2022-02-14 13:42:38+08:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="120" LINES="30"]
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ dc[Kocker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS                     PORTS     NAMES                SIZE
+10e637637505   nginx     "/docker-entrypoint.…"   8 minutes ago   Exited (0) 8 minutes ago             gifted_morse         1.09kB (virtual 142MB)
+232b6f1799fd   nginx     "/docker-entrypoint.…"   8 minutes ago   Exited (0) 8 minutes ago             laughing_hypatia     1.09kB (virtual 142MB)
+0f5a314e3c9a   nginx     "/docker-entrypoint.…"   8 minutes ago   Up 8 minutes               80/tcp    magical_chatterjee   1.09kB (virtual 142MB)
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                      TAG       IMAGE ID       CREATED        SIZE
+mjmbalagt4s/docker101tutorial   latest    55f60354f9de   5 days ago     28.8MB
+docker101tutorial               latest    55f60354f9de   5 days ago     28.8MB
+nginx                           latest    c316d5a335a5   2 weeks ago    142MB
+alpine/git                      latest    c6b70534b534   2 months ago   27.4MB
+hello-world                     latest    feb5d9fea6a5   4 months ago   13.3kB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ dockre[K[Ker cot[Kntainer prune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+10e637637505218117ec200d7ba2b062ee2ee2a25e4a19f955e267e358b2319e
+232b6f1799fd5b47f796ef6a412d6f699857304eecdabc7f765c28846efc4f28
+
+Total reclaimed space: 2.186kB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES                SIZE
+0f5a314e3c9a   nginx     "/docker-entrypoint.…"   10 minutes ago   Up 10 minutes   80/tcp    magical_chatterjee   1.09kB (virtual 142MB)
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                      TAG       IMAGE ID       CREATED        SIZE
+docker101tutorial               latest    55f60354f9de   5 days ago     28.8MB
+mjmbalagt4s/docker101tutorial   latest    55f60354f9de   5 days ago     28.8MB
+nginx                           latest    c316d5a335a5   2 weeks ago    142MB
+alpine/git                      latest    c6b70534b534   2 months ago   27.4MB
+hello-world                     latest    feb5d9fea6a5   4 months ago   13.3kB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker system prune
+WARNING! This will remove:
+  - all stopped containers
+  - all networks not used by at least one container
+  - all dangling images
+  - all dangling build cache
+
+Are you sure you want to continue? [y/N] y
+Deleted build cache objects:
+lvq8wpphmbcxuj0ltrhyxowow
+o4cqlnh4jtdjg55523sh420f7
+p4nshf29i0rhpjakkjjtx2ve5
+mww2sb2te6jbpaxvpdatr6wtw
+oc2rpbszlr39acrjkcajwmj14
+va3wgtyb8i849hw3wuf5sw11h
+qfv1ojr14mfpkwxaep0ro0haz
+h50bzq2d7l1c26i0ykurf5ao3
+vvykwcqgce2adtshzy0owr7vo
+z1js9r92smpolajydgvlqpofg
+7br433qu7dmrwrcqh9ek1utjv
+vc44k0ocsj4qe2yqkhet24k5s
+s4ssuaim2fgbhpl4sme8qiqrm
+l0oy1actk00xz4sbxkv8l15qz
+kwdnea2q01t743wyifbdxyg19
+y49w07cfopo8z59erbo9yihj7
+imcjv2z9ueiwovggaw8bus113
+fqtjonkdz5e9z4fq3vswf5zob
+2j48qov7smdlikppy1cerm5ru
+vsw4swh6y2346zn7zisgx1w25
+ntraydwyipag9udy5f2rxpqs8
+o5b7u4oq59xvs0h30903l15h8
+u6cfm069a84jmv78q2x4j793k
+
+Total reclaimed space: 85.63MB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker cont[K[K[K[Kps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+0f5a314e3c9a   nginx     "/docker-entrypoint.…"   12 minutes ago   Up 12 minutes   80/tcp    magical_chatterjee
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                      TAG       IMAGE ID       CREATED        SIZE
+docker101tutorial               latest    55f60354f9de   5 days ago     28.8MB
+mjmbalagt4s/docker101tutorial   latest    55f60354f9de   5 days ago     28.8MB
+nginx                           latest    c316d5a335a5   2 weeks ago    142MB
+alpine/git                      latest    c6b70534b534   2 months ago   27.4MB
+hello-world                     latest    feb5d9fea6a5   4 months ago   13.3kB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi 55f6 55f[K[K[Kc31 c69 feb
+Untagged: hello-world:latest
+Untagged: hello-world@sha256:507ecde44b8eb741278274653120c2bf793b174c06ff4eaa672b713b3263477b
+Deleted: sha256:feb5d9fea6a5e9606aa995e879d862b825965ba48de054caab5ef356dc6b3412
+Deleted: sha256:e07ee1baac5fae6a26f30cabfe54a36d3402f96afda318fe0a96cec4ca393359
+Error response from daemon: conflict: unable to delete 55f60354f9de (must be forced) - image is referenced in multiple repositories
+Error response from daemon: conflict: unable to delete c316d5a335a5 (cannot be forced) - image is being used by running container 0f5a314e3c9a
+Error: No such image: c69
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi 55f6 c31 c69 feb[Kdocker rmi c6b
+Untagged: alpine/git:latest
+Untagged: alpine/git@sha256:d4740deff7f05d2d48771ff66d9d9c26dfb76f0db0aa833b1ea0ee346fa1e48f
+Deleted: sha256:c6b70534b5345907acb938b3a8537d5f9d8f123f56be4699ef9dc319232588b9
+Deleted: sha256:61a19ac185024720577dd82bc720392d1d9019a4515d92b18478750292b62491
+Deleted: sha256:d032213481af768064844eba068b9ab5aaf56f9745c9fcdd187e6206bfd13b66
+Deleted: sha256:98a58daf06cf58d41a9b945b39160c5d6c90b8d6e65920023aa64a2cc57a3124
+Deleted: sha256:1a058d5342cc722ad5439cacae4b2b4eedde51d8fe8800fcf28444302355c16d
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker imga[K[Kages
+REPOSITORY                      TAG       IMAGE ID       CREATED       SIZE
+docker101tutorial               latest    55f60354f9de   5 days ago    28.8MB
+mjmbalagt4s/docker101tutorial   latest    55f60354f9de   5 days ago    28.8MB
+nginx                           latest    c316d5a335a5   2 weeks ago   142MB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker c[Kcontainer stop[K[K[K[K[K ls -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+0f5a314e3c9a   nginx     "/docker-entrypoint.…"   14 minutes ago   Up 14 minutes   80/tcp    magical_chatterjee
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker st[Ktop 0f5
+0f5
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rm 0f5
+0f5
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi c31
+Untagged: nginx:latest
+Untagged: nginx@sha256:2834dc507516af02784808c5f48b7cbe38b8ed5d0f4837f16e78d00deb7e7767
+Deleted: sha256:c316d5a335a5cf324b0dc83b3da82d7608724769f6454f6d9a621f3ec2534a5a
+Deleted: sha256:67e568696593c33b4a15c9d81dc6f67499b8d973b88eb49b53d47bf4dbf4d187
+Deleted: sha256:0f8d4e3d979c540644f248b4206cf540978166b095223bdc950628dca2e8f3f1
+Deleted: sha256:5d75bfe8a7422476a495b27c8a1598d1206137631d350b8bdee13bc88f365282
+Deleted: sha256:8284a9e28c625b2826efdd6160ea1ff7f710881a4a2afe1ef58a5eb51d3f919e
+Deleted: sha256:89a1db9e1079b7574c1a707bc8c1fe04ff723bc71d4bca8bc48653e9a32186d2
+Deleted: sha256:7d0ebbe3f5d26c1b5ec4d5dbb6fe3205d7061f9735080b0162d550530328abd6
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY                      TAG       IMAGE ID       CREATED      SIZE
+docker101tutorial               latest    55f60354f9de   5 days ago   28.8MB
+mjmbalagt4s/docker101tutorial   latest    55f60354f9de   5 days ago   28.8MB
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi docket101tutorial mjmbalagt4s/docker101tutorial
+Untagged: mjmbalagt4s/docker101tutorial:latest
+Untagged: mjmbalagt4s/docker101tutorial@sha256:12cc714f59b96fc461630f7810b58803a97891b7200c5def5ee433d51bba9b02
+Error: No such image: docket101tutorial
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi docket101tutorial mjmbalagt4s/docker101tutorial[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+Error: No such image: docket101tutorial
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi docket101tutorial[1P101tutorialr101tutorial
+Untagged: docker101tutorial:latest
+Deleted: sha256:55f60354f9decdf2bf9d18ec4543fa66378cb55de819fdb64675da73e7c43bb3
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker rmi docker101tutorialt101tutorialr101tutorial[Kdocker rmi mjmbalagt3s[K[K4s/docker101tutorial
+Error: No such image: mjmbalagt4s/docker101tutorial
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1[00m$ exit
+exit
+
+Script done on 2022-02-14 13:50:51+08:00 [COMMAND_EXIT_CODE="0"]
