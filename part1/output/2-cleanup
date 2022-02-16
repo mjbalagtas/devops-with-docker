@@ -1,0 +1,6 @@
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+de3a4660ee41   nginx     "/docker-entrypoint.…"   38 minutes ago   Up 38 minutes   80/tcp    third-container
+
+
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    c316d5a335a5   3 weeks ago   142MB

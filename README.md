@@ -7,10 +7,17 @@
 ---
 ## Table of Contents
 ###  Part 1 Exercises
-
+---
 #### 1.1:Getting started
 * [solution][getting started]
 * [output][getting started output]
+#### 1.2:Cleanup
+* [solution][getting started]
+* [output][cleanup output]
+
+
 
 [getting started]: part1/1-getting-started
 [getting started output]: part1/output/1-getting-started
+[cleanup]: part1/2-cleanup
+[cleanup output]: part1/output/2-cleanup
