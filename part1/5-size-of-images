@@ -1,0 +1,4 @@
+docker run -d -it --name size-of-images-ubuntu devopsdockeruh/simple-web-service:ubuntu
+docker run -d -it --name size-of-images-alpine devopsdockeruh/simple-web-service:alpine
+docker start -i size-of-images-alpine
+

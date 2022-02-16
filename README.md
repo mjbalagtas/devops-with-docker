@@ -20,6 +20,9 @@
 #### 1.4:Missing dependencies
 * [solution][missing dependencies]
 * [output][missing dependencies output]
+#### 1.5:Size of images
+* [solution][size of images]
+* [output][size of images output]
 
 [getting started]: part1/1-getting-started
 [getting started output]: part1/output/1-getting-started
@@ -29,3 +32,5 @@
 [secret message output]: part1/output/3-secret-message
 [missing dependencies]: part1/4-missing-dependencies
 [missing dependencies output]: part1/output/4-missing-dependencies
+[size of images]: part1/5-size-of-images
+[size of images output]: part1/output/5-size-of-images
