@@ -30,6 +30,11 @@
 * [Dockerfile][two line dockerfile]
 * [image builder][two line dockerfile command]
 * [output][two line dockerfile output]
+#### 1.8:Image for script
+* [Dockerfile][image for script]
+* [script][image for script text]
+* [image builder][image for script command]
+* [output][image for script output]
 
 
 [getting started]: part1/1-getting-started
@@ -47,3 +52,7 @@
 [two line dockerfile]: part1/7-two-line-dockerfile/Dockerfile
 [two line dockerfile command]: part1/7-two-line-dockerfile/command
 [two line dockerfile output]: part1/output/7-two-line-dockerfile
+[image for script]: part1/8-image-for-script/Dockerfile
+[image for script command]: part1/8-image-for-script/command
+[image for script text]: part1/8-image-for-script/script.txt
+[image for script output]: part1/ouput/8-image-for-script

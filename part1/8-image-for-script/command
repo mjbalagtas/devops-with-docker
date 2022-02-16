@@ -1,0 +1,2 @@
+docker build . -t curler
+docker run -it --name 8-image-for-script --rm curler
