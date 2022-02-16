@@ -23,6 +23,9 @@
 #### 1.5:Size of images
 * [solution][size of images]
 * [output][size of images output]
+#### 1.6:Hello Docker Hub
+* [solution][hello docker hub]
+* [output][hello docker hub output]
 
 [getting started]: part1/1-getting-started
 [getting started output]: part1/output/1-getting-started
@@ -33,4 +36,6 @@
 [missing dependencies]: part1/4-missing-dependencies
 [missing dependencies output]: part1/output/4-missing-dependencies
 [size of images]: part1/5-size-of-images
-[size of images output]: part1/output/5-size-of-images
+[size of images output]: part1/output/5-size-of-image
+[hello docker hub]: part1/6-hello-docker-hub
+[hello docker hub output]: part1/output/6-hello-docker-hub
