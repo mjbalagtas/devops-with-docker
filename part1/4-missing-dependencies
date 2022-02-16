@@ -1,0 +1,10 @@
+docker run -d -it --name missing-dependencies ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+docker exec -it missing-dependencies sh
+
+#COMMAND INSIDE CONTAINER
+#apt-get update && apt-get install curl -y
+#exit
+
+docker start -i missing-dependencies
+helsinki.fi
+

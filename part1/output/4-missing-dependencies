@@ -1,0 +1,17 @@
+Script started on 2022-02-16 21:16:25+08:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="92" LINES="49"]
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1/output[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1/output[00m$ ccdocker start -i missing-dependencies | helsinki.fi > output/4-missing-dependencies[A]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1/output[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1/output[00m$ cc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kdocker start -i missing-depen dencies
+Input website:
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+]0;mjmbalagtas@LAPTOP-FLN8MSJ5: ~/devops-with-docker/part1/output[01;32mmjmbalagtas@LAPTOP-FLN8MSJ5[00m:[01;34m~/devops-with-docker/part1/output[00m$ exit
+exit
+
+Script done on 2022-02-16 21:16:46+08:00 [COMMAND_EXIT_CODE="0"]

@@ -17,6 +17,9 @@
 #### 1.3:Secret message
 * [solution][secret message]
 * [output][secret message output]
+#### 1.4:Missing dependencies
+* [solution][missing dependencies]
+* [output][missing dependencies output]
 
 [getting started]: part1/1-getting-started
 [getting started output]: part1/output/1-getting-started
@@ -24,3 +27,5 @@
 [cleanup output]: part1/output/2-cleanup
 [secret message]: part1/3-secret-message
 [secret message output]: part1/output/3-secret-message
+[missing dependencies]: part1/4-missing-dependencies
+[missing dependencies output]: part1/output/4-missing-dependencies
