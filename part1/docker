@@ -1,2 +1,0 @@
-CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
-de3a4660ee41   nginx     "/docker-entrypoint.…"   34 minutes ago   Up 34 minutes   80/tcp    third-container

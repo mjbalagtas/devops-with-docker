@@ -1,0 +1,2 @@
+docker run -it -v "$(pwd)/output/9-volumes:/usr/src/app/text.log" -w /usr/src/app/text.log --name 9-volumes --rm devopsdockeruh/simple-web-service
+
