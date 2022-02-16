@@ -1,4 +1,4 @@
-[# DEVOPS WITH DOCKER](https://devopswithdocker.com/)
+# [DEVOPS WITH DOCKER](https://devopswithdocker.com/)
 ---
 ## About this course
 >This course is an introductory course to Docker and docker-compose.
@@ -6,8 +6,8 @@
 >such as reverse proxies, databases, etc.
 ---
 ## Table of Contents
-### * Part 1 Exercises
+###  Part 1 Exercises
 
 [1.1:Getting started][getting started]
 
-[getting started]: ### Getting started
+[getting started]: Getting started
