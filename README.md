@@ -27,8 +27,8 @@
 * [solution][hello docker hub]
 * [output][hello docker hub output]
 #### 1.7:Two line Dockerfile
-* [Dockerfile] [two line dockerfile]
-* [image builder] [two line dockerfile command]
+* [Dockerfile][two line dockerfile]
+* [image builder][two line dockerfile command]
 * [output][two line dockerfile output]
 
 
