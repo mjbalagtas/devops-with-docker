@@ -12,7 +12,7 @@
 * [solution][getting started]
 * [output][getting started output]
 #### 1.2:Cleanup
-* [solution][getting started]
+* [solution][cleanup]
 * [output][cleanup output]
 
 
