@@ -38,6 +38,9 @@
 #### 1.9:Volumes
 * [solution][volumes]
 * [output][volumes output]
+#### 1.10:Ports open
+* [solution][ports open]
+* [output][ports open output]
 
 
 [getting started]: part1/1-getting-started
@@ -61,3 +64,5 @@
 [image for script output]: part1/output/8-image-for-script
 [volumes]: part1/9-volumes
 [volumes output]: part1/output/9-volumes/text.log
+[ports open]: part1/10-ports-open
+[ports open output]: part1/output/10-ports-open
