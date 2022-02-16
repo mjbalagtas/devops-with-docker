@@ -1,0 +1,6 @@
+docker run -d --name first-container nginx
+docker run -d --name second-container nginx
+docker run -d --name third-container nginx
+docker stop first-container
+docker stop second-container
+docker ps -a

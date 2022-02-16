@@ -10,4 +10,4 @@
 
 [1.1:Getting started][getting started]
 
-[getting started]: Getting started
+[getting started]: (./part1/1-getting-started)
