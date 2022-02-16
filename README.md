@@ -6,5 +6,5 @@
 >such as reverse proxies, databases, etc.
 ---
 ## Table of Contents
-.*### Part 1 Exercises
-..1.1:[Getting started][1-1]
+### * Part 1 Exercises
+...1.1:[Getting started][1-1]
