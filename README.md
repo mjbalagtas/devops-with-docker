@@ -14,10 +14,13 @@
 #### 1.2:Cleanup
 * [solution][cleanup]
 * [output][cleanup output]
-
-
+#### 1.3:Secret message
+* [solution][secret message]
+* [output][secret message output]
 
 [getting started]: part1/1-getting-started
 [getting started output]: part1/output/1-getting-started
 [cleanup]: part1/2-cleanup
 [cleanup output]: part1/output/2-cleanup
+[secret message]: part1/3-secret-message
+[secret message output]: part1/output/3-secret-message
