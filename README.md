@@ -8,6 +8,9 @@
 ## Table of Contents
 ###  Part 1 Exercises
 
-[1.1:Getting started][getting started]
+####1.1:Getting started
+* [solution][getting started]
+* [output][getting started output]
 
 [getting started]: part1/1-getting-started
+[getting started output]: part1/output/1-getting-started
