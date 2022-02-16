@@ -55,4 +55,4 @@
 [image for script]: part1/8-image-for-script/Dockerfile
 [image for script command]: part1/8-image-for-script/command
 [image for script text]: part1/8-image-for-script/script.txt
-[image for script output]: part1/ouput/8-image-for-script
+[image for script output]: part1/output/8-image-for-script
