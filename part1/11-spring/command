@@ -1,0 +1,2 @@
+docker build . -t spring-project
+docker container run -d -it -p 127.0.0.1:8080:8080 spring-project

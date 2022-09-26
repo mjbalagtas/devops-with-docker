@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+FROM example-backend
+ENV REQUEST_ORIGIN=http://localhost:5000
+CMD ["./server"]
