@@ -1,0 +1,2 @@
+docker tag curler-v02 mjmbalagt4s/curler-v02
+docker push mjmbalagt4s/curler-v02
