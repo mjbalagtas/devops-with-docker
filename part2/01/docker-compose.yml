@@ -1,0 +1,10 @@
+---
+version: '3.9'
+
+services:
+    sws:
+        build: .
+        image: devopsdockeruh/simple-web-service
+        volumes:
+            - ./text.log:/usr/src/app/text.log
+        container_name: s-w-s
